@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chatra Sathi | Print • Photo • Gifts</title>
+<style>
+:root{--yellow:#ffe600;--green:#08bf63;--card:#fff;--ink:#111;--muted:#aaa}
+*{box-sizing:border-box} body{margin:0;background:#050505;color:#fff;font-family:Arial,Helvetica,sans-serif} a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#050505eF;border-bottom:1px solid #222}.nav{max-width:1220px;margin:auto;display:flex;align-items:center;gap:28px;padding:14px 18px}.brand{font-size:25px;font-weight:800;margin-right:auto}.brand b{color:var(--yellow)} nav{display:flex;gap:25px;font-weight:600} nav a:hover{color:var(--yellow)}
+.hero{max-width:1220px;margin:20px auto 0;padding:34px 28px;border-radius:22px;background:linear-gradient(120deg,#fff3dc,#ffd4df);color:#111;overflow:hidden}.hero small{font-weight:800}.hero h1{font-size:clamp(34px,6vw,68px);margin:8px 0 6px;line-height:.95}.hero h1 span{color:#d60045}.hero p{max-width:650px;font-size:18px}.hero .cta{display:inline-block;margin-top:8px;background:#111;color:#fff;padding:13px 20px;border-radius:10px;font-weight:800}
+main{max-width:1220px;margin:auto;padding:28px 18px 60px}.title{text-align:center;color:var(--yellow);font-size:32px;margin:5px 0 30px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.card{background:var(--card);color:var(--ink);border-radius:12px;padding:8px;overflow:hidden}.pic{height:260px;border-radius:9px;display:grid;place-items:center;text-align:center;padding:20px;background:linear-gradient(145deg,#202020,#565656);color:white;font-weight:900;font-size:28px}.pic span{display:block;font-size:14px;color:#ddd;margin-top:8px}.card h3{font-size:22px;margin:12px 8px 3px}.price{margin:0 8px 12px;color:#555;font-weight:700}.wa{display:block;background:var(--green);color:white;text-align:center;padding:12px;border-radius:9px;font-size:21px;font-weight:900}.wa:hover{filter:brightness(.92)}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:25px 0 42px}.cat{background:#151515;border:1px solid #292929;border-radius:12px;padding:19px;text-align:center;font-weight:800}.cat:hover{border-color:var(--yellow);color:var(--yellow)}
+.info{margin-top:48px;background:#111;border:1px solid #252525;border-radius:18px;padding:25px}.info h2{color:var(--yellow)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#191919;border-radius:12px;padding:18px}.step b{font-size:24px;color:var(--yellow)}
+footer{text-align:center;color:#888;padding:25px;border-top:1px solid #222}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(2,1fr)}nav{display:none}.steps{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.pic{height:300px}.hero{margin:12px;border-radius:15px}.brand{font-size:21px}}
+.calculator{margin:0 0 48px;background:#171717;border:1px solid #333;border-radius:18px;padding:28px}.calculator h2{margin:0 0 8px;color:var(--yellow)}.calculator p{color:#ccc;line-height:1.5}.fields{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0}.fields label{display:grid;gap:8px;font-weight:700}.fields input,.fields select{width:100%;padding:13px;border:1px solid #777;border-radius:9px;background:#fff;color:#111;font:inherit}.summary{background:#252525;border-radius:12px;padding:20px;line-height:1.7}.summary strong{font-size:26px;color:var(--yellow)}.calculator .wa{display:inline-block;margin-top:18px;font-size:18px;padding:14px 22px}.note{font-size:14px}@media(max-width:900px){.fields{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.fields{grid-template-columns:1fr}.calculator{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand"><b>CHATRA</b> SATHI</div><nav><a href="#home">Home</a><a href="#products">Printing</a><a href="#products">Photo Frames</a><a href="#products">Custom Gifts</a><a href="#contact">Contact</a></nav></div></header>
+<section class="hero" id="home"><small>PRINT • PERSONALIZE • GIFT</small><h1>Your ideas.<br><span>Beautifully printed.</span></h1><p>PDF printing, photo frames, personalized gifts, PVC cards and more. Choose a product and order directly through WhatsApp.</p><a class="cta" href="#products">Explore Products →</a></section>
+<main>
+<section class="calculator" id="pdf-printing"><h2>A4 PDF Printing</h2><p>Enter the number of pages in your PDF and choose your print options. Send the PDF in WhatsApp after opening your order.</p><div class="fields"><label>Pages in PDF<input id="pages" type="number" min="1" step="1" value="10"></label><label>Copies<input id="copies" type="number" min="1" step="1" value="1"></label><label>Print type<select id="printType"><option value="bw-single">B&amp;W · Single side · ₹2/page</option><option value="bw-double">B&amp;W · Both sides · ₹3/sheet</option><option value="color-single">Colour · Single side · ₹5/page</option></select></label><label>Spiral binding<select id="binding"><option value="no">No binding</option><option value="yes">Add binding to each copy</option></select></label></div><div class="summary" id="estimate" aria-live="polite"></div><a class="wa" id="pdfOrder" target="_blank" rel="noopener">Order on WhatsApp</a><p class="note">A double-sided sheet holds up to two PDF pages. Binding: up to 50 pages ₹50, 51–100 pages ₹70, over 100 pages ₹100 per copy. Estimate excludes delivery or other finishing. For colour double-sided or other paper sizes, ask us on WhatsApp.</p></section>
+<div class="categories"><a class="cat" href="#pdf-printing">🖨️ PDF Printing</a><a class="cat" href="#products">🖼️ Photo Frames</a><a class="cat" href="#products">🎁 Custom Gifts</a><a class="cat" href="#products">💳 PVC Cards</a></div>
+<h2 class="title" id="products">★ BEST SELLING ★</h2>
+<div class="grid" id="productGrid"></div>
+<section class="info"><h2>How to order</h2><div class="steps"><div class="step"><b>01</b><h3>Choose</h3><p>Select the printing or personalized product you need.</p></div><div class="step"><b>02</b><h3>Send your file</h3><p>Send your PDF/photo through WhatsApp along with size and quantity.</p></div><div class="step"><b>03</b><h3>Confirm</h3><p>We confirm price, design details and collection/delivery information.</p></div></div></section>
+<section class="info" id="contact"><h2>Chatra Sathi</h2><p>Printing • Copying • Photo Frames • Personalized Products</p><p>WhatsApp: +91 94753 82275 • Ausgram, Purba Bardhaman, West Bengal</p></section>
+</main><footer>© 2026 Chatra Sathi • Made for your local printing business</footer>
+<script>
+const WHATSAPP_NUMBER = '919475382275';
+const products=[
+['A4 PDF Printing','From ₹2/page','PDF PRINT','B&W / Colour • Single / Double Side'],
+['Premium Photo Frame','From ₹—','PHOTO FRAME','Multiple sizes available'],
+['Sublimation Mug','From ₹—','CUSTOM MUG','Your photo • Your message'],
+['PVC Card Printing','From ₹—','PVC CARD','Durable personalized print'],
+['Spiral Binding','From ₹50','SPIRAL BINDING','Projects • Notes • Documents'],
+['Photo Printing','From ₹—','PHOTO PRINT','Glossy • Multiple sizes'],
+['Birthday Photo Frame','From ₹—','GIFT FRAME','Personalized design'],
+['Custom T-Shirt','From ₹—','T-SHIRT PRINT','Custom artwork & text']
+];
+function order(name){const msg=`Hello Chatra Sathi, I want to order: ${name}. Please send me the details.`; window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank')}
+document.getElementById('productGrid').innerHTML=products.map(p=>`<article class="card"><div class="pic">${p[2]}<span>${p[3]}</span></div><h3>${p[0]}</h3><p class="price">${p[1]}</p><a class="wa" href="#" onclick="order('${p[0]}');return false">☏ Order on WhatsApp</a></article>`).join('');
+const ids=['pages','copies','printType','binding'];
+function updateEstimate(){
+ const pages=Number(document.getElementById('pages').value),copies=Number(document.getElementById('copies').value);
+ const valid=Number.isSafeInteger(pages)&&pages>0&&Number.isSafeInteger(copies)&&copies>0&&pages*copies<=1000000;
+ const output=document.getElementById('estimate'),button=document.getElementById('pdfOrder');
+ if(!valid){output.textContent='Enter whole numbers greater than zero for pages and copies (up to 1,000,000 printed pages).';button.hidden=true;button.removeAttribute('href');return}
+ const type=document.getElementById('printType').value,bound=document.getElementById('binding').value==='yes';
+ const units=type==='bw-double'?Math.ceil(pages/2):pages;
+ const unitRate=type==='color-single'?5:type==='bw-double'?3:2;
+ const bindingRate=bound?(pages<=50?50:pages<=100?70:100):0;
+ const printCost=units*unitRate*copies,bindingCost=bindingRate*copies,total=printCost+bindingCost;
+ const label=type==='bw-double'?'B&W, both sides':type==='color-single'?'Colour, single side':'B&W, single side';
+ output.innerHTML=`Printing: ₹${printCost.toLocaleString('en-IN')} (${units} ${type==='bw-double'?'sheet(s)':'page(s)'} × ₹${unitRate} × ${copies} ${copies===1?'copy':'copies'})<br>Binding: ₹${bindingCost.toLocaleString('en-IN')}<br><strong>Estimated total: ₹${total.toLocaleString('en-IN')}</strong>`;
+ const message=`Hello Chatra Sathi, I would like A4 PDF printing. Pages in PDF: ${pages}. Copies: ${copies}. Print type: ${label}. Spiral binding: ${bound?'Yes':'No'}. Estimated total: ₹${total}. I will send the PDF here. Please confirm the final price and order.`;
+ button.href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;button.hidden=false;
+}
+ids.forEach(id=>document.getElementById(id).addEventListener('input',updateEstimate));updateEstimate();
+</script>
+</body></html>
